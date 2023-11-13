@@ -30,7 +30,8 @@ class CharacterAdapter (private val characterList: List<RickAndMorty>):
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemCharacterViewHolder {
-        val binding = ItemRickAndMortyBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemRickAndMortyBinding
+            .inflate(LayoutInflater.from(parent.context), parent, false)
 
         return ItemCharacterViewHolder(binding)
     }
